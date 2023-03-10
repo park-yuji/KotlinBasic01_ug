@@ -3,6 +3,7 @@ package com.reno.kotlinbasic01_ug
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.reno.kotlinbasic01_ug.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,12 @@ class MainActivity : AppCompatActivity() {
             // 코드에 메모 남기기 (Ctrl+/)
 //            이 {} 안에 있는 코드만 버튼이 눌렸을때 실행
             Log.d("메인 화면 로그","클릭용 버튼 눌림")
+            Log.e("메인화면로그","에러관련로그")
+        }
+
+        binding.smallBtn.setOnClickListener{
+            // 어디서 띄울지, 띄울 문구
+            Toast.makeText(this, "작은 버튼 눌림", Toast.LENGTH_SHORT).show()
         }
     }
     override fun onDestroy() {
