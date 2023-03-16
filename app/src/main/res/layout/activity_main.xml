@@ -8,17 +8,28 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/clickBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="클릭용 버튼"/>
-
-    <Button
-        android:id="@+id/smallBtn"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="버튼"/>
+        android:text="보여줄 문구"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아무 문장이나 입력"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문장 반영"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="입력한 내용이 나올 자리" />
+
+
 
 
 </LinearLayout>

@@ -8,11 +8,16 @@ import com.reno.kotlinbasic01_ug.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    // 변수
     private var mBinding: ActivityMainBinding? = null
+    // 상수
     private val binding get() = mBinding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
          // setContentView(R.layout.activity_main)
+
+
+        val myName = "유지";
 
         // 자동 생성된 뷰 바인딩 클래스에서의 inflate라는 메서드를 활용해서
         // 액티비티에서 사용할 바인딩 클래스의 인스턴스 생성
