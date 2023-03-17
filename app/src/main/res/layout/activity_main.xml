@@ -14,16 +14,19 @@
         android:text="보여줄 문구"/>
 
     <EditText
+        android:id="@+id/contentEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="아무 문장이나 입력"/>
 
     <Button
+        android:id="@+id/okBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="문장 반영"/>
 
     <TextView
+        android:id="@+id/resultTxt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
