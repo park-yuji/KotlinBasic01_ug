@@ -8,29 +8,87 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:src="@drawable/renosoft_logo"
+            android:scaleType="centerInside"/>
+        
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="보여줄 문구"/>
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="아이디" />
 
     <EditText
-        android:id="@+id/contentEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="아무 문장이나 입력"/>
-
-    <Button
-        android:id="@+id/okBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="문장 반영"/>
+        android:hint="이메일 양식"
+        android:id="@+id/emailTxt"
+        android:inputType="textEmailAddress"/>
 
     <TextView
-        android:id="@+id/resultTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:text="비밀번호" />
+
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="입력한 내용이 나올 자리" />
+        android:layout_height="wrap_content"
+        android:hint="비밀번호 입력"
+        android:id="@+id/pwdTxt"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="회원가입"
+            android:textColor="#7a5a01"
+            android:backgroundTint="#ffbe0a"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="로그인"
+            android:textColor="#7a5a01"
+            android:backgroundTint="#ffbe0a"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/loginBtn"
+            />
+
+    </LinearLayout>
 
 
 

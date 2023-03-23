@@ -23,13 +23,18 @@ class MainActivity : AppCompatActivity() {
         // 인스턴스를 활용하여 생성된 뷰를 액티비티에 표시 합니다.
         setContentView(binding.root)
 
-        binding.okBtn.setOnClickListener {
+        binding.loginBtn.setOnClickListener {
             // 조회
-            val inputContent = binding.contentEdt.text.toString()
+            val inputId = binding.emailTxt.text.toString()
+            val inputPw = binding.pwdTxt.text.toString()
+
+            if("admin@test.com".equals(inputId) && "qwer".equals(inputPw)){
+                Toast.makeText(this, "관리자 입니다.", Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(this, "로그인 실패!!", Toast.LENGTH_SHORT).show()
+            }
 
 
-            // 세팅
-            binding.resultTxt.text = inputContent
         }
 
        /* binding.clickBtn.setOnClickListener{
@@ -39,10 +44,7 @@ class MainActivity : AppCompatActivity() {
             Log.e("메인화면로그","에러관련로그")
         }
 
-        binding.smallBtn.setOnClickListener{
-            // 어디서 띄울지, 띄울 문구
-            Toast.makeText(this, "작은 버튼 눌림", Toast.LENGTH_SHORT).show()
-        }*/
+        */
     }
     override fun onDestroy() {
         // onDestroy 에서 binding class 인스턴스 참조를 정리해주어야 한다.
