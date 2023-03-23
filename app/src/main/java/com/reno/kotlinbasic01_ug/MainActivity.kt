@@ -29,7 +29,11 @@ class MainActivity : AppCompatActivity() {
             val inputPw = binding.pwdTxt.text.toString()
 
             if("admin@test.com".equals(inputId) && "qwer".equals(inputPw)){
-                Toast.makeText(this, "관리자 입니다.", Toast.LENGTH_SHORT).show()
+
+                // 코들린에서 string 가공법
+                val name = "ug"
+
+                Toast.makeText(this, "${name} 관리자 입니다.", Toast.LENGTH_SHORT).show()
             }else{
                 Toast.makeText(this, "로그인 실패!!", Toast.LENGTH_SHORT).show()
             }
